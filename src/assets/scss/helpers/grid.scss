@@ -1,0 +1,11 @@
+@import 'variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  max-width: $wrapper-size;
+  padding: 0 $offset-15;
+  margin: $offset-auto;
+}
