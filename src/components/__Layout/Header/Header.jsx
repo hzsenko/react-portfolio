@@ -1,19 +1,38 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PageLinks from '@utils/const/PageLinks';
+import MainMenu from '../../__Partials/MainMenu/MainMenu';
 
-function Header({ children }) {
-  return (
-    <div className="app-header">
-      {children}
-    </div>
-  );
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      menu: [
+        PageLinks.home,
+        PageLinks.about,
+        PageLinks.portfolio,
+        PageLinks.contacts,
+      ],
+    };
+  }
+
+  render() {
+    const { menu } = this.state;
+    return (
+      <div className="app-header">
+      <div className="page-wrapper">
+        <div className="app-header__top">
+            <div className="app-header__top-left">
+              {/* logo */}
+            </div>
+            <div className="app-header__top-right">
+              <MainMenu menu={menu} />
+            </div>
+          </div>
+      </div>
+      </div>
+    );
+  }
 }
-
-Header.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Header;
