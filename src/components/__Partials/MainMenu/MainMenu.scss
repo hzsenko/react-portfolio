@@ -7,27 +7,34 @@
   flex-wrap: wrap;
 
   &__item {
-    margin: 0 $offset-5;
     cursor: pointer;
-
-    &:hover {
-
-      a {
-        color: $color-han-blue;
-      }
-    }
+    position: relative;
+    padding: 20px 0;
 
     a {
-      border-bottom: 2px solid transparent;
       text-decoration: none;
       color: $color-cadet;
       font-weight: 600;
       display: inline-block;
-      padding: 0 $offset-15 $offset-15;
+      padding: 0 $offset-15 $offset-10;
 
-      &._active {
-        border-color: $color-han-blue;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $color-han-blue;
+        display: none;
+      }
+
+      &:hover, &._active {
         color: $color-han-blue;
+
+        &:after {
+          display: block;
+        }
       }
     }
   }

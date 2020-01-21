@@ -1,13 +1,15 @@
 @import "../../../assets/scss/helpers/variables.scss";
 
 .app-header {
-  padding-top: $offset-15;
+  background: $color-platinum;
+  box-shadow: 0 0px 5px -2px $color-outer-space;
 
   &__top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: $offset-20;
 
     &-left {
       flex: 0 0 120px;

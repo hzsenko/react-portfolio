@@ -7,11 +7,20 @@ $media-size-xs: 450px;
 
 $wrapper-size: 1100px;
 
-$offset-15: 15px;
 $offset-5: 5px;
+$offset-10: 10px;
+$offset-15: 15px;
+$offset-20: 20px;
 $offset-auto: 0 auto;
 
 $transition-type-for-link: all 0.2s ease-in-out;
 
 $color-cadet: #525d68b3;
 $color-han-blue: #4d6dbd;
+$color-outer-space: #454545;
+$color-platinum: rgba(255, 255, 255, 0.3);
+
+
+body {
+  background: url(../../images/bg.png);
+}

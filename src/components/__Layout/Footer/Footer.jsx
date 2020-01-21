@@ -1,19 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Footer({ children }) {
+import './Footer.scss';
+import Copyright from '../../__Partials/Copyright/Copyright';
+
+function Footer() {
   return (
     <div className="app-footer">
-      {children}
+      <div className="page-wrapper">
+        <div className="app-footer__top">
+          {/* Social */}
+        </div>
+        <div className="app-footer__bottom">
+          {/* Menu */}
+          <Copyright />
+        </div>
+      </div>
     </div>
   );
 }
-
-Footer.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Footer;

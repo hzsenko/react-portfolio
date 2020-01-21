@@ -2,10 +2,31 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+	padding: 0;
 }
 
 .page-wrapper {
   max-width: $wrapper-size;
   padding: 0 $offset-15;
   margin: $offset-auto;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#app-root {
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.app-content {
+  flex: 1 0 auto;
+}
+
+.app-footer {
+  flex: 0 0 auto;
 }
