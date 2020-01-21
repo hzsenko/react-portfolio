@@ -30,7 +30,7 @@ class Header extends React.Component {
               <Logo src={LogoImg} alt="" />
             </div>
             <div className="app-header__top-right">
-              <MainMenu menu={menu} />
+              <MainMenu menu={menu} className="__header" />
             </div>
           </div>
         </div>

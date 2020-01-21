@@ -1,22 +1,47 @@
 import React from 'react';
+import SocialLinks from '@utils/const/SocialLinks';
+import PageLinks from '@utils/const/PageLinks';
+import Copyright from '../../__Partials/Copyright/Copyright';
+import Social from '../../__Partials/Social/Social';
+import MainMenu from '../../__Partials/MainMenu/MainMenu';
 
 import './Footer.scss';
-import Copyright from '../../__Partials/Copyright/Copyright';
 
-function Footer() {
-  return (
-    <div className="app-footer">
-      <div className="page-wrapper">
-        <div className="app-footer__top">
-          {/* Social */}
-        </div>
-        <div className="app-footer__bottom">
-          {/* Menu */}
-          <Copyright />
+class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      socialItems: [
+        SocialLinks.vk,
+        SocialLinks.instagram,
+        SocialLinks.github,
+      ],
+      menu: [
+        PageLinks.home,
+        PageLinks.about,
+        PageLinks.portfolio,
+        PageLinks.contacts,
+      ],
+    };
+  }
+
+  render() {
+    const { socialItems, menu } = this.state;
+    return (
+      <div className="app-footer">
+        <div className="page-wrapper">
+          <div className="app-footer__top">
+            <Social items={socialItems} />
+          </div>
+          <div className="app-footer__bottom">
+            <MainMenu menu={menu} className="__footer" />
+            <Copyright />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Footer;
