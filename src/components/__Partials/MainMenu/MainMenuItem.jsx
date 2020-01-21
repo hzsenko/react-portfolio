@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-function MainMenuItem({ children, href }) {
+function MainMenuItem({ children, href, exact }) {
   return (
-    <div className="menu-item">
-      <Link to={href}>{children}</Link>
+    <div className="app-menu__item">
+      <NavLink
+        to={href}
+        activeClassName="_active"
+        exact={exact}
+      >
+        {children}
+      </NavLink>
     </div>
   );
 }
@@ -13,6 +19,11 @@ function MainMenuItem({ children, href }) {
 MainMenuItem.propTypes = {
   children: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
+  exact: PropTypes.bool,
+};
+
+MainMenuItem.defaultProps = {
+  exact: false,
 };
 
 export default MainMenuItem;

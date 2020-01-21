@@ -3,6 +3,7 @@ const PageLinks = {
     id: 'home',
     text: 'Главная',
     href: '/',
+    exact: true,
   },
   about: {
     id: 'about',

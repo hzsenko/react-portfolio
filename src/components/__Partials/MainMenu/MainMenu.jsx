@@ -3,18 +3,26 @@ import PropTypes from 'prop-types';
 import PageLinkType from '@utils/types/PageLinkType';
 import MainMenuItem from './MainMenuItem';
 
+import './MainMenu.scss';
+
 function MainMenu({ menu }) {
-  const items = menu.map((item) => (
+  const items = menu.map(({
+    href,
+    id,
+    text,
+    ...other
+  }) => (
     <MainMenuItem
-      href={item.href}
-      key={item.id}
+      href={href}
+      key={id}
+      {...other}
     >
-      {item.text}
+      {text}
     </MainMenuItem>
   ));
 
   return (
-    <div className="main-menu">
+    <div className="app-menu">
       {items}
     </div>
   );

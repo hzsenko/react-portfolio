@@ -1,0 +1,34 @@
+@import '../../../assets/scss/helpers/variables.scss';
+
+.app-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin: 0 $offset-5;
+    cursor: pointer;
+
+    &:hover {
+
+      a {
+        color: $color-han-blue;
+      }
+    }
+
+    a {
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+      color: $color-cadet;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0 $offset-15 $offset-15;
+
+      &._active {
+        border-color: $color-han-blue;
+        color: $color-han-blue;
+      }
+    }
+  }
+}

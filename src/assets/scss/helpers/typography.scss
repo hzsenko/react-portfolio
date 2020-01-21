@@ -3,3 +3,7 @@
 body {
   font-family: $font-family;
 }
+
+a {
+  transition: $transition-type-for-link;
+}

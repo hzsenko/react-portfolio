@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Layout from './components/__Layout/Layout/Layout';
 import Header from './components/__Layout/Header/Header';
@@ -16,23 +12,20 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Header />
-        <Main>
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Main>
-        <Footer>footer</Footer>
-      </Layout>
-    </Router>
-
+    <Layout>
+      <Header />
+      <Main>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Main>
+      <Footer>footer</Footer>
+    </Layout>
   );
 }
 
