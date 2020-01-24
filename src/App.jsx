@@ -7,6 +7,7 @@ import Footer from './components/__Layout/Footer/Footer';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contacts from './components/Contacts/Contacts';
+import Portfolio from './components/__Layout/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Switch>
             <Route path="/contacts">
               <Contacts />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
             </Route>
             <Route path="/about">
               <About />

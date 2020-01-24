@@ -12,9 +12,10 @@ function Title({ className, children }) {
 
 Title.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.arrayOf([
+  children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.node,
+    PropTypes.element,
   ]),
 };
 
