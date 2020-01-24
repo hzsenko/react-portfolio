@@ -1,4 +1,7 @@
+@import "../../../assets/scss/helpers/variables.scss";
 .app-copyright {
-  color: #fefefe;
   text-align: center;
+  color: $color-roman-silver;
+  text-align: center;
+  font-size: 14px;
 }

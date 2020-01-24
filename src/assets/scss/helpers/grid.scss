@@ -17,6 +17,10 @@ body {
 	height: 100%;
 }
 
+body {
+  background: url(../../images/bg.png);
+}
+
 #app-root {
   display: flex;
 	flex-direction: column;
