@@ -7,7 +7,7 @@ function Intro() {
   return (
     <div className="app-intro">
       <p className="intro-subtitle">
-        My name is Sergey, and I&lsquo;m frontend developer from Siberia
+        Меня зовут Сергей, и я front-end разработчик из Сибири
         <Emoji symbol="❄️" className="--snow" />
       </p>
     </div>

@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import './Logo.scss';
 
 function Logo({ src, alt }) {
   return (
     <div className="app-logo">
-      <img src={src} alt={alt} />
+      <Link to="/">
+        <img src={src} alt={alt} />
+      </Link>
     </div>
   );
 }

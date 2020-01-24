@@ -7,8 +7,8 @@ function Home() {
   return (
     <div className="app-home">
       <Title className="home-title">
-        Hello there!
-        <Emoji symbol="🤟" className="--rock" />
+        Привет!
+        <Emoji symbol="🤟" className="big --rock" />
       </Title>
       <Intro />
     </div>
