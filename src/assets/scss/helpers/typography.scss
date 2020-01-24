@@ -7,3 +7,11 @@ body {
 a {
   transition: $transition-type-for-link;
 }
+
+.h1 {
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: $color-aurometalsaurus;
+}
