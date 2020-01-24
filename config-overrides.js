@@ -8,12 +8,5 @@ module.exports = function override(config, env) {
     '@assets': path.resolve(__dirname, `${paths.appSrc}/assets`),
   })(config, env);
 
-  console.log(config);
-  debugger;
-  // config.module.loaders.push({
-  //   test: /\.svg$/,
-  //   loader: 'svg-inline-loader?classPrefix'
-// }
-
   return config;
 };

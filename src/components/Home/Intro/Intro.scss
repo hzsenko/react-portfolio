@@ -1,0 +1,21 @@
+@import '../../../assets/scss/helpers/variables.scss';
+
+.app-intro {
+  color: $color-aurometalsaurus;
+  padding-bottom: 20px;
+}
+
+.intro {
+  &-title {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+
+  &-subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-aurometalsaurus;
+  }
+}

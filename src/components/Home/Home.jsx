@@ -1,8 +1,11 @@
 import React from 'react';
+import Intro from './Intro/Intro';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className="app-home">
+      <Intro />
+    </div>
   );
 }
 

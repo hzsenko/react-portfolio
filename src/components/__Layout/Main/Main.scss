@@ -1,0 +1,9 @@
+@import '../../../assets//scss/helpers/variables.scss';
+
+.app-main {
+  max-width: $wrapper-size;
+  background: $color-platinum;
+  padding: 30px;
+  border-top-left-radius: 70px;
+  margin: 50px auto;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Main.scss';
+
 function Main({ children }) {
   return (
     <div className="app-main">

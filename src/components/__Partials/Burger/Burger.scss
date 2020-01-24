@@ -1,0 +1,30 @@
+.menu-hamburger {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 48px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #33485F;
+  cursor: pointer;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 24px;
+
+    span {
+      height: 2px;
+      width: 100%;
+      display: block;
+      background: #ffffff;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
