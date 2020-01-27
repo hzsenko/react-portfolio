@@ -1,11 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 function PortfoliPage() {
-  const { id } = useParams();
+  // const { id } = useParams();
   return (
     <div className="portfolio-page">
-      { id }
+      Страница портфолио
     </div>
   );
 }
