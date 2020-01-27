@@ -1,16 +1,14 @@
 import React from 'react';
-import Intro from './Intro/Intro';
+import Intro from '../__Partials/Intro/Intro';
 import Title from '../__Partials/Title/Title';
-import Emoji from '../__Partials/Emoji/Emoji';
 
 function Home() {
   return (
     <div className="app-home">
-      <Title className="home-title">
-        Привет!
-        <Emoji symbol="🤟" className="big --rock" />
-      </Title>
-      <Intro />
+      <Title className="home-title">Привет!</Title>
+      <Intro>
+        <p>Меня зовут Сергей, и я front-end разработчик из Сибири</p>
+      </Intro>
     </div>
   );
 }

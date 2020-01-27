@@ -6,6 +6,7 @@ body {
 
 a {
   transition: $transition-type-for-link;
+  text-decoration: none;
 }
 
 .h1 {

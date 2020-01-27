@@ -6,7 +6,6 @@ import {
   useRouteMatch,
 } from 'react-router-dom';
 
-import Emoji from '../../__Partials/Emoji/Emoji';
 import Title from '../../__Partials/Title/Title';
 import PortfoliPage from '../../PortfolioPage/PortfolioPage';
 
@@ -17,7 +16,6 @@ function Portfolio() {
     <div className="app-portfolio">
       <Title className="portfolio-title">
         Мои работы
-        <Emoji symbol="💪" className="big --strength" />
         <ul>
           <li>
             <Link to={`${url}/1`}>item-1</Link>

@@ -1,0 +1,31 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.feedback-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  a {
+    color: $color-han-blue;
+
+    &:hover {
+      color: $color-dark-blue;
+    }
+  }
+
+  &__item {
+    margin: 0 50px;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 20px;
+      padding: 10px 0;
+      font-weight: 500;
+    }
+  }
+}
