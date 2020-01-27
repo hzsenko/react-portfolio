@@ -1,6 +1,6 @@
-import vk from '@assets/images/svg/vk-icon.svg';
-import instagram from '@assets/images/svg/instagram-icon.svg';
-import github from '@assets/images/svg/github-icon.svg';
+import vk from '@assets/images/svg/social/vk-icon.svg';
+import instagram from '@assets/images/svg/social/instagram-icon.svg';
+import github from '@assets/images/svg/social/github-icon.svg';
 
 const SocialLinks = {
   vk: {

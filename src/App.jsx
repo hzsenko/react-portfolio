@@ -31,7 +31,7 @@ function App() {
           </Switch>
         </Main>
       </div>
-      <Footer>footer</Footer>
+      <Footer />
     </>
   );
 }

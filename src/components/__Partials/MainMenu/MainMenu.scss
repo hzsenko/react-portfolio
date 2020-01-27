@@ -48,8 +48,8 @@
         margin: 0 10px;
 
         &:hover, &._active {
-          color: #32bded;
-          border-color: #32bded;
+          color: $color-easy-blue;
+          border-color: $color-easy-blue;
         }
       }
     }
@@ -63,7 +63,7 @@
     a {
       text-decoration: none;
       font-weight: 400;
-      color: #fff;
+      color: $color-white;
       display: inline-block;
       padding: 0 15px 10px;
     }

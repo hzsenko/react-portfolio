@@ -1,3 +1,5 @@
+@import '../../../assets/scss/helpers/variables.scss';
+
 .menu-hamburger {
   display: flex;
   align-content: center;
@@ -8,7 +10,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #33485F;
+  background-color: $color-charcoal;
   cursor: pointer;
 
   &__wrapper {
@@ -19,7 +21,7 @@
       height: 2px;
       width: 100%;
       display: block;
-      background: #ffffff;
+      background: $color-white;
       margin-bottom: 5px;
 
       &:last-child {
