@@ -7,7 +7,7 @@ import Footer from './components/__Layout/Footer/Footer';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contacts from './components/Contacts/Contacts';
-import Portfolio from './components/__Layout/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default React.memo(App);

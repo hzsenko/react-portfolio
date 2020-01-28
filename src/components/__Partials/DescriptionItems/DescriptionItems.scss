@@ -1,0 +1,52 @@
+@import '../../../assets/scss/helpers/variables.scss';
+
+.description {
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &-item {
+    position: relative;
+    flex: 0 0 33.33%;
+    padding: 30px;
+
+    &__num {
+      font-size: 21px;
+      position: absolute;
+      color: $color-white;
+      top: 15px;
+      left: 40px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 38px;
+      font-weight: bold;
+      background: $color-han-blue;
+      box-shadow: 3px -1px 5px $color-easy-black;
+    }
+
+    &__img {
+      text-align: center;
+      max-width: 180px;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: $color-aurometalsaurus;
+      padding: 10px 0;
+      line-height: 1.4;
+    }
+  }
+}

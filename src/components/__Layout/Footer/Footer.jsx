@@ -7,7 +7,7 @@ import MainMenu from '../../__Partials/MainMenu/MainMenu';
 
 import './Footer.scss';
 
-class Footer extends React.Component {
+class Footer extends React.PureComponent {
   constructor(props) {
     super(props);
 

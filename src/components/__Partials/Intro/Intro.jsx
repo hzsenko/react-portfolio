@@ -17,4 +17,4 @@ Intro.propTypes = {
   ]).isRequired,
 };
 
-export default Intro;
+export default React.memo(Intro);

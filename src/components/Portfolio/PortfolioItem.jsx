@@ -16,4 +16,4 @@ function PortfolioItem() {
   );
 }
 
-export default PortfolioItem;
+export default React.memo(PortfolioItem);

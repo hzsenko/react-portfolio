@@ -1,16 +1,38 @@
-import React from 'react';
-import Intro from '../__Partials/Intro/Intro';
-import Title from '../__Partials/Title/Title';
+import React, { PureComponent } from 'react';
+import Description from '@utils/const/Description';
 
-function Home() {
-  return (
-    <div className="app-home">
-      <Title className="home-title">Привет!</Title>
-      <Intro>
-        <p>Меня зовут Сергей, и я front-end разработчик из Сибири</p>
-      </Intro>
-    </div>
-  );
+import Title from '../__Partials/Title/Title';
+import Intro from '../__Partials/Intro/Intro';
+import DescriptionItems from '../__Partials/DescriptionItems/DescriptionItems';
+
+class Home extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      description: [
+        Description.code,
+        Description.tutorial,
+        Description.about,
+      ],
+    };
+  }
+
+  render() {
+    const { description } = this.state;
+
+    return (
+      <div className="app-home">
+        <Title className="home-title">Привет!</Title>
+        <Intro>
+          <p>Меня зовут Сергей, и я front-end разработчик из Сибири.</p>
+          <p>Этот сайт - моя домашняя страничка, где я размещаю свои работы и делюсь мыслями.</p>
+          <p className="__subtitle">На этом сайте вы можете найти:</p>
+        </Intro>
+        <DescriptionItems items={description} />
+      </div>
+    );
+  }
 }
 
 export default Home;

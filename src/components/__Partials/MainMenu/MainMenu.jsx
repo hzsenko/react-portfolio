@@ -39,4 +39,4 @@ MainMenu.defaultProps = {
   className: '',
 };
 
-export default MainMenu;
+export default React.memo(MainMenu);

@@ -26,4 +26,4 @@ MainMenuItem.defaultProps = {
   exact: false,
 };
 
-export default MainMenuItem;
+export default React.memo(MainMenuItem);

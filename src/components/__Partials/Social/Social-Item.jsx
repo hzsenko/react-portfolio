@@ -31,4 +31,4 @@ SocialItem.defaultProps = {
   text: '',
 };
 
-export default SocialItem;
+export default React.memo(SocialItem);

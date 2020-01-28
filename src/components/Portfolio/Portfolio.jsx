@@ -5,8 +5,8 @@ import React from 'react';
 //   useRouteMatch,
 // } from 'react-router-dom';
 
-import Title from '../../__Partials/Title/Title';
-import Intro from '../../__Partials/Intro/Intro';
+import Title from '../__Partials/Title/Title';
+import Intro from '../__Partials/Intro/Intro';
 // import PortfoliPage from '../../PortfolioPage/PortfolioPage';
 import PortfolioItem from './PortfolioItem';
 
@@ -42,4 +42,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default React.memo(Portfolio);

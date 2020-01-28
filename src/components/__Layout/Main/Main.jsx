@@ -18,4 +18,4 @@ Main.propTypes = {
   ]).isRequired,
 };
 
-export default Main;
+export default React.memo(Main);

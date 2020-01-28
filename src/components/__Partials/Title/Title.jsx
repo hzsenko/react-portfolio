@@ -24,4 +24,4 @@ Title.defaultProps = {
   children: '',
 };
 
-export default Title;
+export default React.memo(Title);

@@ -6,7 +6,7 @@ import Logo from '../../__Partials/Logo/Logo';
 
 import './Header.scss';
 
-class Header extends React.Component {
+class Header extends React.PureComponent {
   constructor(props) {
     super(props);
 
