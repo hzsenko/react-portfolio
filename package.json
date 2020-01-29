@@ -2,12 +2,14 @@
   "name": "react-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://hzsenko.github.io/react-portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-app-rewired": "^2.1.5",
@@ -18,7 +20,9 @@
   "scripts": {
     "dev": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "lint": "eslint ./src --ext .js --ext .jsx"
+    "lint": "eslint ./src --ext .js --ext .jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

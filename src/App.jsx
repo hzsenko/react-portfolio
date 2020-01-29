@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/__Layout/Header/Header';
 import Main from './components/__Layout/Main/Main';
 import Footer from './components/__Layout/Footer/Footer';
-import About from './components/About/About';
-import Home from './components/Home/Home';
-import Contacts from './components/Contacts/Contacts';
-import Portfolio from './components/Portfolio/Portfolio';
+
+const Home = lazy(() => import ('./components/Home/Home'));
+const About = lazy(() => import ('./components/About/About'));
+const Contacts = lazy(() => import ('./components/Contacts/Contacts'));
+const Portfolio = lazy(() => import ('./components/Portfolio/Portfolio'));
+
 
 function App() {
   return (
@@ -15,20 +17,22 @@ function App() {
       <div className="app-content">
         <Header />
         <Main>
-          <Switch>
-            <Route path="/contacts">
-              <Contacts />
-            </Route>
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <Suspense fallback={<div>Загрузка...</div>}>
+            <Switch>
+              <Route path="/contacts">
+                <Contacts />
+              </Route>
+              <Route path="/portfolio">
+                <Portfolio />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Suspense>
         </Main>
       </div>
       <Footer />
