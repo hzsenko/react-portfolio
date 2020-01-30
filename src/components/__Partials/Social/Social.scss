@@ -43,6 +43,11 @@
       display: inline-block;
       vertical-align: middle;
       line-height: 0px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

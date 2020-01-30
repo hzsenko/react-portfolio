@@ -27,7 +27,9 @@ class Header extends React.PureComponent {
         <div className="page-wrapper">
           <div className="app-header__top">
             <div className="app-header__top-left">
-              <Logo src={LogoImg} alt="" />
+              <Logo>
+                <LogoImg />
+              </Logo>
             </div>
             <div className="app-header__top-right">
               <MainMenu menu={menu} className="__header" />

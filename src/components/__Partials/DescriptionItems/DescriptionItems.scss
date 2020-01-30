@@ -32,11 +32,12 @@
 
     &__img {
       text-align: center;
-      max-width: 180px;
       margin: 0 auto;
+      max-width: 180px;
 
-      img {
-        max-width: 100%;
+      svg {
+        width: 180px;
+        height: auto;
       }
     }
 

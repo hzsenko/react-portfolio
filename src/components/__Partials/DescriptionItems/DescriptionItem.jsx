@@ -8,20 +8,21 @@ function DescriptionItem({
 }) {
   return (
     <div className="description-item">
-      <div className="description-item">
-        <div className="description-item__num">{index + 1}</div>
-        <div className="description-item__img">
-          <img src={src} alt="" />
-        </div>
-        <div className="description-item__text">{text}</div>
+      <div className="description-item__num">{index + 1}</div>
+      <div className="description-item__img">
+        {/* {src()} */}
       </div>
+      <div className="description-item__text">{text}</div>
     </div>
   );
 }
 
 DescriptionItem.propTypes = {
   text: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.element,
+  ]).isRequired,
   index: PropTypes.number.isRequired,
 };
 

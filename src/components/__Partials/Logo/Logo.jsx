@@ -4,23 +4,21 @@ import { Link } from 'react-router-dom';
 
 import './Logo.scss';
 
-function Logo({ src, alt }) {
+function Logo({ children }) {
   return (
     <div className="app-logo">
       <Link to="/">
-        <img src={src} alt={alt} />
+        {/* {children} */}
       </Link>
     </div>
   );
 }
 
 Logo.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string,
-};
-
-Logo.defaultProps = {
-  alt: '',
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default React.memo(Logo);
