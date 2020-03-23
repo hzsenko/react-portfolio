@@ -1,8 +1,8 @@
 import React from 'react';
 import PageLinks from '@utils/const/PageLinks';
-import LogoImg from '@assets/images/svg/logo.svg';
-import MainMenu from '../../__Partials/MainMenu/MainMenu';
-import Logo from '../../__Partials/Logo/Logo';
+import { LogoSvg } from '../../__Partials/SvgImage/SvgImage';
+import MainMenu from '../../__Partials/MainMenu';
+import Logo from '../../__Partials/Logo';
 
 import './Header.scss';
 
@@ -28,7 +28,7 @@ class Header extends React.PureComponent {
           <div className="app-header__top">
             <div className="app-header__top-left">
               <Logo>
-                <LogoImg />
+                <LogoSvg />
               </Logo>
             </div>
             <div className="app-header__top-right">

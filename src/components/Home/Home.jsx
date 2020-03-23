@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import Description from '@utils/const/Description';
 
-import Title from '../__Partials/Title/Title';
-import Intro from '../__Partials/Intro/Intro';
-import DescriptionItems from '../__Partials/DescriptionItems/DescriptionItems';
+import Title from '../__Partials/Title';
+import Intro from '../__Partials/Intro';
+import DescriptionItems from '../__Partials/DescriptionItems';
 
 class Home extends PureComponent {
   constructor(props) {

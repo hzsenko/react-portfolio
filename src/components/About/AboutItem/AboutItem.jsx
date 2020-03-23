@@ -5,7 +5,7 @@ function AboutItem({ item }) {
   return (
     <div className="field-item">
       <div className="field-item__img">
-        <img src={item.img} alt="" />
+        {item.img()}
       </div>
       <div className="field-item__text">{item.text}</div>
     </div>
@@ -14,7 +14,7 @@ function AboutItem({ item }) {
 
 AboutItem.propTypes = {
   item: PropTypes.shape({
-    img: PropTypes.string.isRequired,
+    img: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
   }).isRequired,
 };

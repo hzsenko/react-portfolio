@@ -1,25 +1,23 @@
-import vk from '@assets/images/svg/social/vk-icon.svg';
-import instagram from '@assets/images/svg/social/instagram-icon.svg';
-import github from '@assets/images/svg/social/github-icon.svg';
+import { VkontakteSvg, InstagramSvg, GithubSvg } from '../../components/__Partials/SvgImage/SvgImage';
 
 const SocialLinks = {
   vk: {
     type: 'vk',
     text: 'Вконтакте',
     href: 'http://vk.com/id11660970',
-    src: vk,
+    src: VkontakteSvg,
   },
   instagram: {
     type: 'instagram',
     text: 'Instagram',
     href: 'https://instagram.com/hzsenko',
-    src: instagram,
+    src: InstagramSvg,
   },
   github: {
     type: 'github',
     text: 'GitHub',
     href: 'http://github.com/hzsenko',
-    src: github,
+    src: GithubSvg,
   },
 };
 

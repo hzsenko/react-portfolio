@@ -10,7 +10,7 @@ function DescriptionItem({
     <div className="description-item">
       <div className="description-item__num">{index + 1}</div>
       <div className="description-item__img">
-        {/* {src()} */}
+        {src()}
       </div>
       <div className="description-item__text">{text}</div>
     </div>

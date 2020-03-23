@@ -1,14 +1,15 @@
 import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Header from './components/__Layout/Header/Header';
-import Main from './components/__Layout/Main/Main';
-import Footer from './components/__Layout/Footer/Footer';
+import Header from './components/__Layout/Header';
+import Main from './components/__Layout/Main';
+import Footer from './components/__Layout/Footer';
+import Spinner from './components/__Partials/Spinner';
 
-const Home = lazy(() => import ('./components/Home/Home'));
-const About = lazy(() => import ('./components/About/About'));
-const Contacts = lazy(() => import ('./components/Contacts/Contacts'));
-const Portfolio = lazy(() => import ('./components/Portfolio/Portfolio'));
+const Home = lazy(() => import('./components/Home'));
+const About = lazy(() => import('./components/About'));
+const Contacts = lazy(() => import('./components/Contacts'));
+const Portfolio = lazy(() => import('./components/Portfolio'));
 
 
 function App() {
@@ -17,20 +18,12 @@ function App() {
       <div className="app-content">
         <Header />
         <Main>
-          <Suspense fallback={<div>Загрузка...</div>}>
+          <Suspense fallback={<Spinner />}>
             <Switch>
-              <Route path="/contacts">
-                <Contacts />
-              </Route>
-              <Route path="/portfolio">
-                <Portfolio />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
+              <Route path="/contacts"><Contacts /></Route>
+              <Route path="/portfolio"><Portfolio /></Route>
+              <Route path="/about"><About /></Route>
+              <Route path="/"><Home /></Route>
             </Switch>
           </Suspense>
         </Main>

@@ -10,6 +10,16 @@
   &-image {
     flex: 0 0 40%;
 
+    &-main {
+      background: url(../../assets/images/avatar.jpg) no-repeat no-repeat center -75px;
+      width: 360px;
+      height: 360px;
+      background-size: cover;
+      margin: 0 auto;
+      border-radius: 50%;
+      box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.4);
+    }
+
     img {
       max-width: 100%;
     }

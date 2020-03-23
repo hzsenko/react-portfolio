@@ -1,22 +1,20 @@
-import about from '@assets/images/svg/description/about.svg';
-import code from '@assets/images/svg/description/code.svg';
-import tutorial from '@assets/images/svg/description/tutorial.svg';
+import { AboutSvg, CodeSvg, TutorialSvg } from '../../components/__Partials/SvgImage/SvgImage';
 
 const Description = {
   code: {
     id: 'code',
     text: 'Мои проекты с полным описанием',
-    src: code,
+    src: CodeSvg,
   },
   tutorial: {
     id: 'tutorial',
     text: 'Мои мысли связанные с web-разработкой',
-    src: tutorial,
+    src: TutorialSvg,
   },
   about: {
     id: 'about',
     text: 'Интересные факты и информация обо мне',
-    src: about,
+    src: AboutSvg,
   },
 };
 

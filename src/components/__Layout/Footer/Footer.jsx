@@ -1,9 +1,9 @@
 import React from 'react';
 import SocialLinks from '@utils/const/SocialLinks';
 import PageLinks from '@utils/const/PageLinks';
-import Copyright from '../../__Partials/Copyright/Copyright';
-import Social from '../../__Partials/Social/Social';
-import MainMenu from '../../__Partials/MainMenu/MainMenu';
+import Copyright from '../../__Partials/Copyright';
+import Social from '../../__Partials/Social';
+import MainMenu from '../../__Partials/MainMenu';
 
 import './Footer.scss';
 

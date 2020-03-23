@@ -10,10 +10,10 @@
     }
   },
   "rules": {
+    "import/no-webpack-loader-syntax": 0,
     "computed-property-spacing": 0,
     "linebreak-style": 0,
     "class-methods-use-this": 0,
-    "import/no-webpack-loader-syntax": 0,
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/extensions": 0,

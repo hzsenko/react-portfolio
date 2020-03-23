@@ -7,12 +7,11 @@ function SocialItem({
   type,
   src,
 }) {
-
   return (
     <div className={classNames('social__item', { [type]: type })}>
       {/* eslint-disable-next-line */}
       <a href={href} target="_blank">
-        {/* {src()} */}
+        {src()}
       </a>
     </div>
   );

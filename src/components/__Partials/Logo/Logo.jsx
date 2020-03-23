@@ -8,7 +8,7 @@ function Logo({ children }) {
   return (
     <div className="app-logo">
       <Link to="/">
-        {/* {children} */}
+        {children}
       </Link>
     </div>
   );

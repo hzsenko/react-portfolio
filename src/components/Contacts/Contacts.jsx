@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 import { faPhoneAlt, faAt } from '@fortawesome/free-solid-svg-icons';
-import Title from '../__Partials/Title/Title';
-import Intro from '../__Partials/Intro/Intro';
+import Title from '../__Partials/Title';
+import Intro from '../__Partials/Intro';
 
 import './Contacts.scss';
 

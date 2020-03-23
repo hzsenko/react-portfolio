@@ -1,27 +1,47 @@
-import image from '@assets/images/svg/about/superpower.svg';
-import guitar from '@assets/images/svg/about/guitar.svg';
+import {
+  YiiSvg,
+  JsSvg,
+  ReactSvg,
+  NodeSvg,
+  SawSvg,
+  GuitarSvg,
+  SportSvg,
+} from '../../components/__Partials/SvgImage/SvgImage';
 
 const AboutInfo = {
   name: 'Zakharov Sergey',
   status: 'Я занимаюсь frontend-разработкой',
-  image,
   otherStatus: 'Помимо разработки, я занимаюсь музыкой, играю на гитаре, пишу музыку и песни. Также я занимаюсь столярным искусством и мастерю из дерева.',
   technologies: [
     {
-      img: guitar,
+      img: JsSvg,
       text: 'JS',
     },
     {
-      img: guitar,
+      img: NodeSvg,
       text: 'NodeJS',
     },
     {
-      img: guitar,
+      img: ReactSvg,
       text: 'React',
     },
     {
-      img: guitar,
+      img: YiiSvg,
       text: 'Yii2',
+    },
+  ],
+  interests: [
+    {
+      img: SawSvg,
+      text: 'Столярное дело',
+    },
+    {
+      img: GuitarSvg,
+      text: 'Музыка',
+    },
+    {
+      img: SportSvg,
+      text: 'Спорт',
     },
   ],
 };

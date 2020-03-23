@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AboutItem from '../AboutItem/AboutItem';
+import AboutItem from '../AboutItem';
 
 function AboutItems({ items }) {
   const elements = items.map((item) => (
