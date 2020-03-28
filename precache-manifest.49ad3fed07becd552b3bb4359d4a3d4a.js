@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e97eca8ff9955d3d77177a86082f623",
+    "revision": "41b67a8c322e468cbdefe0761b186cc4",
     "url": "http://hzsenko.github.io/react-portfolio/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "http://hzsenko.github.io/react-portfolio/static/css/6.312eac0f.chunk.css"
   },
   {
-    "revision": "12262fb84f2c4e6bb7cf",
+    "revision": "5beec322053939e12551",
     "url": "http://hzsenko.github.io/react-portfolio/static/css/main.e7617ef8.chunk.css"
   },
   {
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "http://hzsenko.github.io/react-portfolio/static/js/7.f3bfdd23.chunk.js"
   },
   {
-    "revision": "12262fb84f2c4e6bb7cf",
-    "url": "http://hzsenko.github.io/react-portfolio/static/js/main.5c3438d4.chunk.js"
+    "revision": "5beec322053939e12551",
+    "url": "http://hzsenko.github.io/react-portfolio/static/js/main.74fda28d.chunk.js"
   },
   {
     "revision": "b32ac64e623945a3f6aa",
