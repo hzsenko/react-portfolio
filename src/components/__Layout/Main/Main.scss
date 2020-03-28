@@ -12,4 +12,20 @@
   box-shadow: -2px 0px 5px $color-easy-black;
   min-height: 400px;
   position: relative;
+
+  @include media-width-down($media-size-lg) {
+    max-width: 970px;
+  }
+
+  @include media-width-down($media-size-md) {
+    max-width: 750px;
+  }
+
+  @include media-width-down($media-size-sm) {
+    max-width: none;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px 15px;
+  }
 }

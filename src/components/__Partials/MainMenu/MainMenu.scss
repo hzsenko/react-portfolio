@@ -8,6 +8,10 @@
 
   &.__header {
 
+    @include media-width-down($media-mobile) {
+      display: none;
+    }
+
     .app-menu__item {
 
       a {
@@ -36,11 +40,31 @@
     }
   }
 
+  &.__header.mobile {
+    display: flex;
+    padding-right: 80px;
+
+    .app-menu__item {
+      width: 100%;
+    }
+  }
+
   &.__footer {
     justify-content: center;
 
+    @include media-width-down($media-size-xs) {
+      padding-top: 15px;
+    }
+
     .app-menu__item {
       margin: 0 5px;
+
+      @include media-width-down($media-size-xs) {
+        margin: 0 5px;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+      }
 
       a {
         border-bottom: 1px dashed transparent;
@@ -68,4 +92,16 @@
       padding: 0 15px 10px;
     }
   }
+}
+
+a:hover, a.active {
+
+  &:after {
+    display: none;
+  }
+}
+
+.app-menu.__header.mobile .app-menu__item a:hover:after ,
+.app-menu.__header.mobile .app-menu__item a.active:after, .app-menu.__header.mobile .app-menu__item a:after {
+  display: none;
 }

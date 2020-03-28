@@ -20,3 +20,46 @@
     }
   }
 }
+
+.mobile-hamburger {
+  width: 25px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: none;
+  float: right;
+  cursor: pointer;
+
+  @include media-width-down($media-mobile) {
+    display: flex;
+  }
+
+  span {
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+    background-color: $color-charcoal;
+  }
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $color-white;
+  z-index: 20;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}

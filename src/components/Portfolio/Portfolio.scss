@@ -1,3 +1,5 @@
+@import './../../assets/scss/helpers/variables.scss';
+
 .portfolio {
 
   &-items {
@@ -14,10 +16,18 @@
     font-size: 0;
     margin-bottom: 30px;
 
+    @include media-width-down($media-size-md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-width-down($media-size-md) {
+      flex: 0 0 100%;
+    }
+
     &__num {
       font-size: 21px;
       position: absolute;
-      color: #ffffff;
+      color: $color-white;
       top: -20px;
       left: -15px;
       border-radius: 50%;
@@ -26,8 +36,8 @@
       text-align: center;
       line-height: 38px;
       font-weight: bold;
-      background: #4d6dbd;
-      box-shadow: 3px -1px 5px rgba(0,0,0,0.2);
+      background: $color-han-blue;
+      box-shadow: 3px -1px 5px $color-easy-black;
     }
 
     &__wrapper {
@@ -50,9 +60,24 @@
       line-height: 1;
       font-size: 18px;
       width: 100%;
-      background: #33485f94;
-      color: #ffffff;
+      background: $color-easy-dark-blue;
+      color: $color-white;
       font-weight: 500;
     }
   }
+}
+
+.empty {
+  text-align: center;
+    padding-top: 80px;
+
+    &-text {
+      font-size: 44px;
+      padding-bottom: 15px;
+    }
+
+    &-icon {
+      font-size: 100px;
+      color: $color-han-blue;
+    }
 }

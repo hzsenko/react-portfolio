@@ -4,9 +4,11 @@ import React from 'react';
 //   Route,
 //   useRouteMatch,
 // } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBatteryThreeQuarters } from '@fortawesome/free-solid-svg-icons';
+import Title from '../__Partials/Title';
+import Intro from '../__Partials/Intro';
 
-import Title from '../__Partials/Title/Title';
-import Intro from '../__Partials/Intro/Intro';
 // import PortfoliPage from '../../PortfolioPage/PortfolioPage';
 import PortfolioItem from './PortfolioItem';
 
@@ -14,8 +16,18 @@ import './Portfolio.scss';
 
 function Portfolio() {
   // const { path } = useRouteMatch();
+  const dev = true;
 
-  return (
+  const portfolioEmpty = (
+    <div className="empty">
+      <div className="empty-icon">
+        <FontAwesomeIcon icon={faBatteryThreeQuarters} />
+      </div>
+      <p className="empty-text">Раздел находится в разработке</p>
+    </div>
+  );
+
+  const portfolioContent = (
     <div className="app-portfolio">
       <Title className="portfolio-title">Мои работы</Title>
       <Intro>
@@ -40,6 +52,8 @@ function Portfolio() {
       </Switch> */}
     </div>
   );
+
+  return dev ? portfolioEmpty : portfolioContent;
 }
 
 export default React.memo(Portfolio);

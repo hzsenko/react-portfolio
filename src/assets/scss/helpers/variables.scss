@@ -1,3 +1,5 @@
+@import './../mixins/media-width-down.scss';
+@import './../mixins/media-width-up.scss';
 $font-family: 'Raleway', sans-serif;
 $wrapper-size: 1140px;
 $button-size: 220px;
@@ -5,18 +7,19 @@ $button-size: 220px;
 $media-size-lg: 1200px;
 $media-size-md: 992px;
 $media-size-sm: 768px;
+$media-mobile: 600px;
 $media-size-xs: 450px;
 
 $transition-type-for-link: all 0.2s ease-in-out;
 
+$color-easy-dark-blue: #33485f94;
 $color-cadet: #525d68b3;
 $color-han-blue: #4d6dbd;
 $color-han-blue-hover: #4461a9;
-$color-queen-blue: #42658C;
+$color-queen-blue: #42658c;
 $color-dark-blue: #394f84;
 $color-easy-blue: #32bded;
 $color-outer-space: #454545;
-$color-platinum: rgba(255, 255, 255, 0.3);
 $color-aurometalsaurus: #63707e;
 $color-roman-silver: #83909d;
 $color-hard-silver: #7d8690;
@@ -26,5 +29,8 @@ $color-state-gray: #777f88;
 $color-desire: #dc3953;
 $color-charcoal: #33485f;
 $color-white: #ffffff;
+$color-medium-white: #eeeeee;
 
+$color-platinum: rgba(255, 255, 255, 0.3);
+$color-medium-black: rgba(0, 0, 0, 0.4);
 $color-easy-black: rgba(0,0,0,0.2);

@@ -1,3 +1,5 @@
+@import './../../assets/scss/helpers/variables.scss';
+
 .about {
 
   &-container {
@@ -10,6 +12,10 @@
   &-image {
     flex: 0 0 40%;
 
+    @include media-width-down($media-size-sm) {
+      margin: 0 auto;
+    }
+
     &-main {
       background: url(../../assets/images/avatar.jpg) no-repeat no-repeat center -75px;
       width: 360px;
@@ -17,7 +23,19 @@
       background-size: cover;
       margin: 0 auto;
       border-radius: 50%;
-      box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 -1px 9px $color-medium-black;
+
+      @include media-width-down($media-size-md) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @include media-width-down($media-size-sm) {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background-position: center center;
+      }
     }
 
     img {
@@ -28,6 +46,17 @@
   &-info {
     flex: 0 0 60%;
     padding-left: 50px;
+        padding: 0;
+
+    @include media-width-down($media-size-lg) {
+      padding-left: 30px;
+    }
+
+    @include media-width-down($media-size-sm) {
+      flex: 0 0 100%;
+      padding: 0;
+    }
+
 
     &__title {
       font-weight: bold;
@@ -35,7 +64,7 @@
       text-align: right;
       padding-bottom: 15px;
       margin-bottom: 10px;
-      color: #33485F;
+      color: $color-charcoal;
       position: relative;
 
       &:after {
@@ -43,7 +72,7 @@
         position: absolute;
         width: 125px;
         height: 3px;
-        background: #33485F;
+        background: $color-charcoal;
         bottom: 0;
         right: 0;
       }
@@ -59,7 +88,7 @@
 .field {
 
   &-label {
-    color: #63707e;
+    color: $color-aurometalsaurus;
     font-weight: bold;
     padding-bottom: 10px;
   }
@@ -67,7 +96,7 @@
   &-text {
     font-size: 18px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid $color-medium-white;
     margin-bottom: 10px;
     line-height: 1.4;
   }
@@ -84,8 +113,25 @@
     padding: 30px;
     text-align: center;
 
+    @include media-width-down($media-size-lg) {
+      padding: 20px;
+    }
+
+    @include media-width-down($media-size-md) {
+      padding: 15px 5px;
+    }
+
+    @include media-width-down($media-size-md) {
+      flex: 0 0 50%;
+    }
+
     &__img {
       padding-bottom: 10px;
+
+      @include media-width-down($media-size-md) {
+        max-width: 45px;
+        margin: 0 auto;
+      }
 
       img {
         max-width: 100%;
@@ -95,7 +141,7 @@
     &__text {
       font-weight: 500;
       font-size: 21px;
-      color: #33485F;
+      color: $color-charcoal;
     }
   }
 }

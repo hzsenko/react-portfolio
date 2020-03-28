@@ -36,7 +36,7 @@ class About extends React.PureComponent {
         <div className="about-container">
           <div className="about-image">
             <div className="about-image-main" />
-            <Button className="about-button">Написать</Button>
+            {/* <Button className="about-button">Написать</Button> */}
           </div>
           <div className="about-info">
             <div className="about-info__title">{name}</div>
