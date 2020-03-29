@@ -23,7 +23,7 @@ function App() {
               <Route path="/contacts"><Contacts /></Route>
               <Route path="/portfolio"><Portfolio /></Route>
               <Route path="/about"><About /></Route>
-              <Route path="/"><Home /></Route>
+              <Route path='/'><Home /></Route>
             </Switch>
           </Suspense>
         </Main>

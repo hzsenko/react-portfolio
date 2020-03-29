@@ -2,7 +2,7 @@ import React from 'react';
 import AboutInfo from '@utils/const/AboutInfo';
 
 import Title from '../__Partials/Title';
-import Button from '../__Partials/Button';
+// import Button from '../__Partials/Button';
 import AboutLabel from './AboutLabel';
 import AboutItems from './AboutItems';
 
@@ -36,7 +36,6 @@ class About extends React.PureComponent {
         <div className="about-container">
           <div className="about-image">
             <div className="about-image-main" />
-            {/* <Button className="about-button">Написать</Button> */}
           </div>
           <div className="about-info">
             <div className="about-info__title">{name}</div>
