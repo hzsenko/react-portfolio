@@ -9,41 +9,6 @@
     align-items: flex-start;
   }
 
-  &-image {
-    flex: 0 0 40%;
-
-    @include media-width-down($media-size-sm) {
-      margin: 0 auto;
-      padding-bottom: 10px;
-    }
-
-    &-main {
-      background: url(../../assets/images/avatar.jpg) no-repeat no-repeat center -75px;
-      width: 360px;
-      height: 360px;
-      background-size: cover;
-      margin: 0 auto;
-      border-radius: 50%;
-      box-shadow: 0 -1px 9px $color-medium-black;
-
-      @include media-width-down($media-size-md) {
-        width: 250px;
-        height: 250px;
-      }
-
-      @include media-width-down($media-size-sm) {
-        margin: 0 auto;
-        width: 100px;
-        height: 100px;
-        background-position: center center;
-      }
-    }
-
-    img {
-      max-width: 100%;
-    }
-  }
-
   &-info {
     flex: 0 0 60%;
     padding-left: 50px;

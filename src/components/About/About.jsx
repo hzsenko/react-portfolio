@@ -1,10 +1,9 @@
 import React from 'react';
 import AboutInfo from '@utils/const/AboutInfo';
-
 import Title from '../__Partials/Title';
-// import Button from '../__Partials/Button';
 import AboutLabel from './AboutLabel';
 import AboutItems from './AboutItems';
+import Avatar from '../__Partials/Avatar/Avatar';
 
 import './About.scss';
 
@@ -34,11 +33,9 @@ class About extends React.PureComponent {
       <div className="app-about">
         <Title className="about-title">Обо мне</Title>
         <div className="about-container">
-          <div className="about-image">
-            <div className="about-image-main" />
-          </div>
+          <Avatar />
           <div className="about-info">
-            <div className="about-info__title">{name}</div>
+            <Title className="about-info__title">{name}</Title>
             <AboutLabel className="about-info__field" label="Специализация">{status}</AboutLabel>
             <AboutLabel className="info__field" label="Любимые технологии" />
             <AboutItems items={technologies} />
